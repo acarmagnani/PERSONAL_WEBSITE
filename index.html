@@ -10,8 +10,13 @@
             window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
         </script>
         <script defer src="/_vercel/insights/script.js"></script>
+        <script src="js/loading_screen.js"></script>
     </head>
     <body>
+
+        <div id="LoadingScreen">
+            <div id="progressText">0%</div>
+        </div>
 
         <div class="cursor"></div>
         <div class="larger-cursor"></div>
@@ -23,38 +28,38 @@
             <div class="container">
                 <div class="column column-1">
                     <div id="Header">
-                        <div id="Header-title" class="animate fadeIn animate--duration-30ms">
+                        <div id="Header-title" class="animate fadeIn animate--duration-30ms animate--delay-1">
                             <h1>Antonio</h1>
                             <h1>Carmagnani</h1>
                         </div>
-                        <h2 id="Header-description" class="animate fadeIn animate--duration-30ms animate--delay-10ms">Architect &amp; Developer</h2>
+                        <h2 id="Header-description" class="animate fadeIn animate--duration-30ms animate--delay-2">Architect &amp; Developer</h2>
                         <div id="Header-nav">
                             <ol>
-                                <li class="animate fadeIn animate--duration-10ms animate--delay-30ms">
+                                <li class="animate fadeIn animate--duration-10ms animate--delay-3">
                                     <a class="animate hoverSpacing" onclick="showPage('Whoami')">
                                         <h2>Who am I</h2>
                                     </a>
                                 </li>
-                                <li class="animate fadeIn animate--duration-10ms animate--delay-32ms">
+                                <li class="animate fadeIn animate--duration-10ms animate--delay-4">
                                     <a class="animate hoverSpacing" onclick="showPage('Projects')">
                                         <h2>My projects</h2>
                                     </a>
                                 </li>
-                                <li class="animate fadeIn animate--duration-10ms animate--delay-34ms">
+                                <li class="animate fadeIn animate--duration-10ms animate--delay-5">
                                     <a class="animate hoverSpacing" onclick="showPage('Exp')">
                                         <h2>My experience</h2>
                                     </a>
                                 </li>
-                                <li class="animate fadeIn animate--duration-10ms animate--delay-36ms">
+                                <li class="animate fadeIn animate--duration-10ms animate--delay-6">
                                     <a class="animate hoverSpacing" onclick="showPage('Contact')">
                                         <h2>Contact me</h2>
                                     </a>
                                 </li>
                                 <a class="animate hoverSpacing" href="https://carmagnanifischbach.com" target="_blank" rel="noopener">
-                                    <li class="animate fadeIn animate--duration-10ms animate--delay-38ms">
+                                    <li class="animate fadeIn animate--duration-10ms animate--delay-7">
                                         <h2>My architecture practice</h2>
                                     </li>
-                                    <li class="animate fadeIn animate--duration-10ms animate--delay-38ms">
+                                    <li class="animate fadeIn animate--duration-10ms animate--delay-7">
                                         <h2 style="padding: 0px 0px 0px 20px">Carmagnani & Fischbach <span class="top-right-arrow"></span></h2>
                                     </li>
                                 </a>
@@ -66,7 +71,7 @@
                 </div>
 
                 <div class="column column-2">
-                    <div id="Content" class="animate fadeIn animate--duration-10ms animate--delay-40ms">
+                    <div id="Content" class="animate fadeIn animate--duration-10ms animate--delay-8">
 
                         <div id="Explore" class="page active" data-page="explore">
                             <div class="content explore">

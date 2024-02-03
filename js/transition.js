@@ -10,6 +10,9 @@ function showPage(pageId) {
                     page.style.display = 'none';
                 }, 500); // Set the display property after the transition duration
             }, 50);
+        } else {
+            // For pages without the active class, set visibility to hidden
+            page.style.visibility = 'hidden';
         }
         page.classList.remove('active');
     });
@@ -22,6 +25,7 @@ function showPage(pageId) {
             setTimeout(function () {
                 selectedPage.classList.add('active');
                 selectedPage.style.opacity = 1;
+                selectedPage.style.visibility = 'visible'; // Set visibility to visible after the fade-in effect
             }, 50);
         }, 500); // Delay before starting the fade-in effect
     }

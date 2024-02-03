@@ -87,32 +87,37 @@ ol,ul,li {
     animation-duration: 1s;
 }
 
-.animate.animate--delay-10ms {
-    animation-delay: 1s;
+
+.animate.animate--delay-1 {
+    animation-delay: 6s;
 }
 
-.animate.animate--delay-30ms {
-    animation-delay: 3s;
+.animate.animate--delay-2 {
+    animation-delay: 7s;
 }
 
-.animate.animate--delay-32ms {
-    animation-delay: 3.2s;
+.animate.animate--delay-3 {
+    animation-delay: 9s;
 }
 
-.animate.animate--delay-34ms {
-    animation-delay: 3.4s;
+.animate.animate--delay-4 {
+    animation-delay: 9.2s;
 }
 
-.animate.animate--delay-36ms {
-    animation-delay: 3.6s;
+.animate.animate--delay-5 {
+    animation-delay: 9.4s;
 }
 
-.animate.animate--delay-38ms {
-    animation-delay: 3.8s;
+.animate.animate--delay-6 {
+    animation-delay: 9.6s;
 }
 
-.animate.animate--delay-40ms {
-    animation-delay: 4s;
+.animate.animate--delay-7 {
+    animation-delay: 9.8s;
+}
+
+.animate.animate--delay-8 {
+    animation-delay: 10s;
 }
 
 @keyframes fadeIn {
@@ -430,6 +435,32 @@ body {
 }
 
 /* CONTENT */
+
+/* LOADING SCREEN */
+
+#LoadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#progressText {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 100;
+    color: var(--c-text);
+    margin-top: 0vh;
+}
+
+/* LOADING SCREEN */
 
 /* EXPLORE */
 
