@@ -89,35 +89,35 @@ ol,ul,li {
 
 
 .animate.animate--delay-1 {
-    animation-delay: 6s;
-}
+    animation-delay: 4.5s;
+}   
 
 .animate.animate--delay-2 {
-    animation-delay: 7s;
+    animation-delay: 5.5s;
 }
 
 .animate.animate--delay-3 {
-    animation-delay: 9s;
+    animation-delay: 7s;
 }
 
 .animate.animate--delay-4 {
-    animation-delay: 9.2s;
+    animation-delay: 7.2s;
 }
 
 .animate.animate--delay-5 {
-    animation-delay: 9.4s;
+    animation-delay: 7.4s;
 }
 
 .animate.animate--delay-6 {
-    animation-delay: 9.6s;
+    animation-delay: 7.6s;
 }
 
 .animate.animate--delay-7 {
-    animation-delay: 9.8s;
+    animation-delay: 7.8s;
 }
 
 .animate.animate--delay-8 {
-    animation-delay: 10s;
+    animation-delay: 8s;
 }
 
 @keyframes fadeIn {

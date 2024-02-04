@@ -22,5 +22,5 @@ document.addEventListener("DOMContentLoaded", function() {
           }, 1000); // Change the delay (in milliseconds) before hiding progressText
         }, 1000); // Change the delay (in milliseconds) before starting the fade-out for progressText
       }
-    }, 40); // Change the interval (in milliseconds) for faster or slower progression
+    }, 25); // Change the interval (in milliseconds) for faster or slower progression
 });
