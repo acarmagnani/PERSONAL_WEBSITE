@@ -72,7 +72,6 @@ ol,ul,li {
 
 /* FONTS */
 
-
 /* ANIMATIONS */
 
 .animate {
@@ -89,35 +88,39 @@ ol,ul,li {
 
 
 .animate.animate--delay-1 {
-    animation-delay: 4.5s;
+    animation-delay: 3.5s;
 }   
 
 .animate.animate--delay-2 {
-    animation-delay: 5.5s;
+    animation-delay: 4.5s;
 }
 
 .animate.animate--delay-3 {
-    animation-delay: 7s;
+    animation-delay: 6s;
 }
 
 .animate.animate--delay-4 {
-    animation-delay: 7.2s;
+    animation-delay: 6.2s;
 }
 
 .animate.animate--delay-5 {
-    animation-delay: 7.4s;
+    animation-delay: 6.4s;
 }
 
 .animate.animate--delay-6 {
-    animation-delay: 7.6s;
+    animation-delay: 6.6s;
 }
 
 .animate.animate--delay-7 {
-    animation-delay: 7.8s;
+    animation-delay: 6.8s;
 }
 
 .animate.animate--delay-8 {
-    animation-delay: 8s;
+    animation-delay: 7s;
+}
+
+.animate.animate--delay-9 {
+    animation-delay: 7.2s;
 }
 
 @keyframes fadeIn {
@@ -143,6 +146,7 @@ ol,ul,li {
 .hoverOpacity:hover {
     opacity: 0.25;
 }
+
 
 @keyframes hoverSpacingIn {
     from {
@@ -174,6 +178,41 @@ ol,ul,li {
 
 .hoverSpacing:not(:hover) {
     animation: hoverSpacingOut 0.3s forwards;
+}
+
+
+@keyframes hoverBgIn {
+    from {
+        color: var(--c-text);
+    }
+    to {
+        background-color: var(--c-text);
+        color: var(--c-bg);
+    }
+}
+
+@keyframes hoverBgOut {
+    from {
+        background-color: var(--c-text);
+        color: var(--c-bg);
+    }
+    to {
+        color: var(--c-text);
+    }
+}
+
+.hoverBg {
+    animation-name: hoverBg;
+    animation-fill-mode: both;
+    transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+}
+
+.hoverBg:hover {
+    animation: hoverBgIn 0.3s forwards;
+}
+
+.hoverBg:not(:hover) {
+    animation: hoverBgOut 0.3s forwards;
 }
 
 /* ANIMATIONS */
@@ -325,7 +364,6 @@ body {
     transform: translate(-50%, -50%) scale(2);
 }
 
-
 /* CURSOR */
 
 /* ARROWS */
@@ -388,6 +426,25 @@ body {
 }
 
 /* HEADER */
+
+/* LANGUAGE */
+
+.lang-pt {
+    display: none;
+}
+
+.lang-en {
+    display: block;
+}
+
+@media (min-width: 700px) {
+    .lang_item-1 {
+        right: 10vw;
+        top: 10vh;
+    }
+}
+
+/* LANGUAGE */
 
 /* CONTENT */
 
@@ -543,6 +600,12 @@ body {
 
 .exp li {
     padding-bottom: var(--marg);
+}
+
+@media (max-width: 699px) {
+    .exp {
+        padding-top: 5vh;
+    }
 }
 
 @media (min-width: 700px) {
