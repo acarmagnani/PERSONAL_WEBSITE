@@ -1,6 +1,5 @@
 const $bigBall = document.querySelector('.larger-cursor');
 const $smallBall = document.querySelector('.cursor');
-const $hoverables = document.querySelectorAll('.hoverCursor');
 
 // Listeners
 for (let i = 0; i < $hoverables.length; i++) {
@@ -21,18 +20,3 @@ document.addEventListener('mousemove', function (e) {
       largerCursor.style.transform = 'translate(' + (e.clientX - largerCursor.clientWidth / 2) + 'px, ' + (e.clientY - largerCursor.clientHeight / 2) + 'px)';
   }, 100); // Adjust the delay time as needed
 });
-
-
-// Hover an element
-function onMouseHover() {
-  gsap.to($bigBall, {
-    duration: 0.3,
-    scale: 4
-  });
-}
-function onMouseHoverOut() {
-  gsap.to($bigBall, {
-    duration: 0.3,
-    scale: 1
-  });
-}
